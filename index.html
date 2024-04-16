@@ -41,7 +41,7 @@
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: scroll;
         }
 
         .b-example-divider {
@@ -268,7 +268,7 @@
 
         <main class="row">
             <div class="row text-center">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -283,6 +283,24 @@
                             </p>
                             <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
                         </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-2">
+                        <form>
+                            <div class="mb-2">
+                                <label for="username" class="form-label">Введите Имя</label>
+                                <input type="text" class="form-control" id="username" aria-describedby="userHelp">
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Введите Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1">
+                            </div>
+                            <div class="mb-2 form-check">
+                            </div>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
